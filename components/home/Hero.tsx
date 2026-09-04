@@ -40,17 +40,19 @@ export default function Hero() {
           Cut &amp; Carve Butcher
         </span>
 
-        <h1 className="max-w-2xl font-display text-4xl font-medium leading-tight sm:text-5xl lg:text-6xl">
+        <h1 className="max-w-3xl font-display text-5xl font-bold uppercase leading-[1.05] tracking-tight sm:text-6xl lg:text-7xl">
           The Finest Meat Market
         </h1>
 
         <div className="flex flex-wrap items-center gap-4">
           <Link
             href="/about/"
-            className="inline-flex items-center gap-2 rounded-full bg-gold-500 px-7 py-3.5 text-sm font-semibold text-forest-950 transition-colors hover:bg-gold-400"
+            className="inline-flex items-center gap-0 overflow-hidden bg-cream-50 text-sm font-semibold uppercase tracking-wide text-forest-950 transition-colors hover:bg-gold-400"
           >
-            Know About Us
-            <ChevronRightIcon className="h-4 w-4" />
+            <span className="px-7 py-4">Know About Us</span>
+            <span className="flex h-full items-center justify-center bg-gold-500 px-4 py-4 text-forest-950">
+              <ChevronRightIcon className="h-4 w-4" />
+            </span>
           </Link>
           <Link
             href="/our-meats/"
