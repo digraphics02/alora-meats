@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import { LeafIcon } from "@/lib/icons";
+import { LeafIcon, PhoneIcon } from "@/lib/icons";
+import { siteConfig } from "@/lib/site-config";
 
 const features = [
   "Premium Cuts",
@@ -55,12 +56,28 @@ export default function About() {
             ))}
           </ul>
 
-          <Link
-            href="/about/"
-            className="mt-8 inline-flex items-center gap-2 rounded-full bg-forest-900 px-7 py-3.5 text-sm font-semibold text-cream-50 transition-colors hover:bg-forest-800"
-          >
-            More About Us
-          </Link>
+          <div className="mt-8 flex flex-wrap items-center gap-5">
+            <Link
+              href="/about/"
+              className="inline-flex items-center gap-2 rounded-full bg-forest-900 px-7 py-3.5 text-sm font-semibold text-cream-50 transition-colors hover:bg-forest-800"
+            >
+              More About Us
+            </Link>
+
+            <a href={siteConfig.phoneHref} className="flex items-center gap-3 group">
+              <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-cream-100 text-forest-900 transition-colors group-hover:bg-gold-500">
+                <PhoneIcon className="h-4 w-4" />
+              </span>
+              <span>
+                <span className="block text-[11px] font-semibold uppercase tracking-wider text-ink-500">
+                  Call for delivery
+                </span>
+                <span className="block text-sm font-semibold text-forest-900">
+                  {siteConfig.phoneDisplay}
+                </span>
+              </span>
+            </a>
+          </div>
         </div>
       </div>
     </section>
