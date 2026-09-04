@@ -4,6 +4,7 @@ import { primaryNav, siteConfig } from "@/lib/site-config";
 import { ChevronRightIcon, FacebookIcon, InstagramIcon, LinkedinIcon, PhoneIcon } from "@/lib/icons";
 import MobileNav from "@/components/MobileNav";
 import SearchNav from "@/components/SearchNav";
+import CartDrawer from "@/components/CartDrawer";
 
 const utilityLinks = [
   { label: "Help", href: "/contact/" },
@@ -76,8 +77,9 @@ export default function Header() {
 
           <div className="flex items-center gap-2">
             <SearchNav />
+            <CartDrawer />
             <Link
-              href="/contact/"
+              href="/shop/"
               className="hidden items-center gap-2 rounded bg-gold-500 px-5 py-2.5 text-sm font-semibold text-forest-950 transition-colors hover:bg-gold-400 sm:inline-flex"
             >
               Order Now
