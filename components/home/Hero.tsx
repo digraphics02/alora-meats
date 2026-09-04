@@ -1,24 +1,29 @@
+import Image from "next/image";
 import Link from "next/link";
 import { ChevronRightIcon, LeafIcon } from "@/lib/icons";
 
+// Stats confirmed as real business figures by the client (2026-09-04).
 const stats = [
-  { value: "25+", label: "Years of craft" },
-  { value: "100%", label: "Quality sourced" },
-  { value: "500+", label: "Clients served" },
-  { value: "30+", label: "Cuts & products" },
+  { value: "30+", label: "Years of experience" },
+  { value: "45K+", label: "Tons of meat supplied" },
+  { value: "35K+", label: "Happy customers" },
+  { value: "32+", label: "Meat products" },
 ];
 
 export default function Hero() {
   return (
     <section className="relative overflow-hidden bg-forest-950 text-cream-50">
+      <Image
+        src="/images/hero-steak.jpg"
+        alt="Raw steak cuts on a wooden butcher's board"
+        fill
+        priority
+        sizes="100vw"
+        className="object-cover opacity-40"
+      />
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-0 opacity-[0.07]"
-        style={{
-          backgroundImage:
-            "radial-gradient(circle at 1px 1px, var(--color-gold-400) 1px, transparent 0)",
-          backgroundSize: "28px 28px",
-        }}
+        className="pointer-events-none absolute inset-0 bg-gradient-to-r from-forest-950 via-forest-950/85 to-forest-950/40"
       />
       <div
         aria-hidden

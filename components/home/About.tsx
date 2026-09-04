@@ -1,5 +1,6 @@
+import Image from "next/image";
 import Link from "next/link";
-import { CleaverIcon, LeafIcon } from "@/lib/icons";
+import { LeafIcon } from "@/lib/icons";
 
 const features = [
   "Premium Cuts",
@@ -14,24 +15,16 @@ export default function About() {
       <div className="container-page grid grid-cols-1 items-center gap-14 lg:grid-cols-2">
         <div className="relative">
           <div className="relative aspect-[4/5] w-full overflow-hidden rounded-3xl bg-forest-900">
-            <div
-              aria-hidden
-              className="absolute inset-0 opacity-20"
-              style={{
-                backgroundImage:
-                  "radial-gradient(circle at 1px 1px, var(--color-gold-400) 1px, transparent 0)",
-                backgroundSize: "24px 24px",
-              }}
+            <Image
+              src="/images/butcher-shop-display.jpg"
+              alt="Raw meat hanging in a butcher shop display"
+              fill
+              sizes="(min-width: 1024px) 50vw, 100vw"
+              className="object-cover"
             />
-            <div className="absolute inset-0 flex items-center justify-center">
-              <CleaverIcon className="h-24 w-24 text-gold-500/70" />
-            </div>
-            <div className="absolute inset-x-6 bottom-6 rounded-xl bg-forest-950/80 px-4 py-3 text-xs text-cream-100/70 backdrop-blur">
-              Image placeholder — swap for real brand/product photography.
-            </div>
           </div>
           <div className="absolute -bottom-6 -right-6 hidden rounded-2xl border border-cream-200 bg-cream-50 px-6 py-5 shadow-lg sm:block">
-            <p className="font-display text-3xl font-semibold text-forest-900">25+</p>
+            <p className="font-display text-3xl font-semibold text-forest-900">30+</p>
             <p className="text-xs text-ink-500">Years of experience</p>
           </div>
         </div>
