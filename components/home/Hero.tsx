@@ -37,32 +37,26 @@ export default function Hero() {
       <div className="container-page relative flex flex-col items-start gap-8 py-24 sm:py-32">
         <span className="inline-flex items-center gap-2 rounded-full border border-gold-500/40 bg-gold-500/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-gold-400">
           <LeafIcon className="h-3.5 w-3.5" />
-          Placeholder eyebrow — e.g. Since [year]
+          Cut &amp; Carve Butcher
         </span>
 
         <h1 className="max-w-2xl font-display text-4xl font-medium leading-tight sm:text-5xl lg:text-6xl">
-          Hero headline placeholder — premium, ethically sourced meats
+          The Finest Meat Market
         </h1>
-
-        <p className="max-w-xl text-base leading-relaxed text-cream-100/75 sm:text-lg">
-          Placeholder supporting paragraph. Final hero copy, headline and
-          messaging will come from the supplied content docs and replace this
-          text.
-        </p>
 
         <div className="flex flex-wrap items-center gap-4">
           <Link
-            href="/our-meats/"
+            href="/about/"
             className="inline-flex items-center gap-2 rounded-full bg-gold-500 px-7 py-3.5 text-sm font-semibold text-forest-950 transition-colors hover:bg-gold-400"
           >
-            Explore Our Meats
+            Know About Us
             <ChevronRightIcon className="h-4 w-4" />
           </Link>
           <Link
-            href="/about/"
+            href="/our-meats/"
             className="inline-flex items-center gap-2 rounded-full border border-cream-100/30 px-7 py-3.5 text-sm font-semibold text-cream-50 transition-colors hover:border-cream-100 hover:bg-cream-100/5"
           >
-            Learn About Us
+            Explore Our Meats
           </Link>
         </div>
 
